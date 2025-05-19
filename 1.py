@@ -31,15 +31,15 @@ class Dijkstra:
         return distance_tracker, path_origin
 
 
-# Пример использования
-road_network = [
-    [(1, 1), (3, 2)],  # Узел 0 соединён с узлом 1 (длина 1) и узлом 3 (длина 2)
-    [(0, 1), (2, 3), (3, 1)],  # Узел 1
-    [(1, 3), (3, 5)],  # Узел 2
-    [(0, 2), (1, 1), (2, 5)]  # Узел 3
+
+arr = [
+    [(1, 1), (3, 2)],
+    [(0, 1), (2, 3), (3, 1)],  
+    [(1, 3), (3, 5)],  
+    [(0, 2), (1, 1), (2, 5)]  
 ]
 
-cl = Dijkstra(road_network, 2)
+cl = Dijkstra(arr, 2)
 result = cl.Dijkstra()
 print(result[0])
 print(result[1])
